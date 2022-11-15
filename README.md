@@ -28,7 +28,7 @@ Modelled after the [Vivid landing page](https://vivid.lol).
 
 ## Customizing
 
-This template is made to be easily customizable! Using Vivid, you can command-click on any part of the page and immediately edit its code.
+This template is made to be easily customizable! Using Vivid, you can command-click on any part of the page and immediately edit its code. Check out the [Vivid docs](https://docs.vivid.lol) for more information on how to style in-browser!
 
 The components in the `src/components` directory provide an easy way to extend the page.
 
