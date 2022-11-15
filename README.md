@@ -4,6 +4,10 @@ This is a ready to use template for any landing page you need!
 
 Modelled after the [Vivid landing page](https://vivid.lol).
 
+## Preview
+
+![landing-article](https://user-images.githubusercontent.com/62365335/202045620-67969a30-d832-4fb1-ae6a-5060f1c32c16.png)
+
 ## Features
 
 - Fully modular and easy to extend
