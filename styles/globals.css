@@ -1,26 +1,99 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/* Download Avenir */
+@import url('http://fonts.cdnfonts.com/css/avenir-next-cyr');
+
+/* Import Tailwind classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;  
+
+/* Make focus ring prettier */
+*:focus {
+  outline: auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* Custom utility classes */
+@layer utilities {
+  /* Use the background as the text fill */
+  .bg-text {
+    @apply text-transparent;
+    @apply bg-clip-text;
   }
-  body {
-    color: white;
-    background: black;
+
+  /* Responsive colors */
+  .bg-extra-strong {
+    @apply bg-gray-50;
+    @apply dark:bg-gray-900;
+  }
+  .bg-strong {
+    @apply bg-gray-100;
+    @apply dark:bg-gray-800;
+  }
+  .bg-medium {
+    @apply bg-gray-300;
+    @apply dark:bg-gray-600;
+  }
+  .bg-light {
+    @apply bg-gray-400;
+    @apply dark:bg-gray-500;
+  }
+  .bg-extra-light {
+    @apply bg-gray-500;
+    @apply dark:bg-gray-400;
+  }
+  .text-extra-strong {
+    @apply text-gray-900;
+    @apply dark:text-gray-50;
+  }
+  .text-strong {
+    @apply text-gray-800;
+    @apply dark:text-gray-100;
+  }
+  .text-medium {
+    @apply text-gray-700;
+    @apply dark:text-gray-300;
+  }
+  .text-light {
+    @apply text-gray-600;
+    @apply dark:text-gray-400;
+  }
+  .text-extra-light {
+    @apply text-gray-500;
+    @apply dark:text-gray-500;
+  }
+
+  /* Text sizing */
+  .title-lg {
+    @apply text-5xl;
+    @apply md:text-7xl;
+    @apply text-strong;
+  }
+  .title-md {
+    @apply text-4xl;
+    @apply md:text-6xl;
+    @apply text-strong;
+  }
+  .body-lg {
+    @apply text-lg;
+    @apply md:text-xl;
+  }
+
+  /* Rounding */
+  .round-rect {
+    @apply rounded-lg;
+    @apply md:rounded-xl;
+  }
+  .round-rect-top {
+    @apply rounded-t-lg;
+    @apply md:rounded-t-xl;
+  }
+
+  /* Flex */
+  .row {
+    @apply flex;
+    @apply flex-row;
+  }
+  .col {
+    @apply flex;
+    @apply flex-col;
   }
 }
