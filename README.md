@@ -20,12 +20,6 @@ Modelled after the [Vivid landing page](https://vivid.lol).
 
 - Built-in light and dark modes
 
-## Pre-Requisites
-
-- `Node.js`
-
-- A package manager like `yarn`, `npm`, or `pnpm`
-
 ## Getting Started
 
 1. Install dependencies with `yarn install` (or the equivalent for other package managers)
