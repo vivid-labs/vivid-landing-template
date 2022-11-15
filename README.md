@@ -18,6 +18,8 @@ Modelled after the [Vivid landing page](https://vivid.lol).
 
 - Easily customizable via Vivid, Tailwind configuration, global style presets, and component props
 
+- Built-in light and dark modes
+
 ## Pre-Requisites
 
 - `Node.js`
