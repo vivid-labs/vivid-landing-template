@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 import { Gradient } from "../types/Gradient.type";
 import { getGradientColors } from "../utils/getGradientColors";
@@ -17,9 +18,10 @@ export const GradientText = (
   return (
     <span
       {...spanProps}
-      className={`bg-text bg-gradient-to-r ${getGradientColors(
-        gradient
-      )} ${className}`}
+      className={twMerge(
+        `bg-text bg-gradient-to-r ${getGradientColors(gradient)}`,
+        className
+      )}
     >
       {children}
     </span>

@@ -3,6 +3,7 @@ import {
   ButtonHTMLAttributes,
   DetailedHTMLProps,
 } from "react";
+import { twMerge } from "tailwind-merge";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -29,12 +30,18 @@ export const LinkButton = (
     <button
       type="button"
       {...(htmlProps as ButtonProps)}
-      className={`text-light hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5 ${className}`}
+      className={twMerge(
+        "text-light hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5",
+        className
+      )}
     />
   ) : (
     <a
       {...(htmlProps as LinkProps)}
-      className={`text-light hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5 ${className}`}
+      className={twMerge(
+        "text-light hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5",
+        className
+      )}
     />
   );
 };

@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -18,12 +19,18 @@ export const Title = (
   return size === "lg" ? (
     <h1
       {...headingProps}
-      className={`font-bold leading-tight tracking-tighter title-lg ${className}`}
+      className={twMerge(
+        "font-bold leading-tight tracking-tighter title-lg",
+        className
+      )}
     />
   ) : (
     <h2
       {...headingProps}
-      className={`font-bold leading-tight tracking-tighter title-md ${className}`}
+      className={twMerge(
+        "font-bold leading-tight tracking-tighter title-md",
+        className
+      )}
     />
   );
 };

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { DetailedHTMLProps, FormEvent, HTMLAttributes, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 import { Button } from "./Button";
 import { Input } from "./Input";
@@ -33,7 +34,7 @@ export const WaitlistForm = (
   );
 
   return (
-    <div {...divProps} className={`col ${divProps.className ?? ""}`}>
+    <div {...divProps} className={twMerge("col", divProps.className)}>
       <form className="relative gap-2 md:gap-4 row" onSubmit={handleSubmit}>
         <Input
           type="email"

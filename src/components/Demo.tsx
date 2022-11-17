@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 import { MacBar } from "./MacBar";
 
@@ -19,9 +20,10 @@ export const Demo = (props: DemoProps) => {
   return (
     <div
       {...divProps}
-      className={`relative col w-full justify-center max-w-2xl overflow-hidden shadow-lg round-rect ${
-        divProps.className ?? ""
-      }`}
+      className={twMerge(
+        "relative col w-full justify-center max-w-2xl overflow-hidden shadow-lg round-rect",
+        divProps.className
+      )}
     >
       <MacBar />
       <video autoPlay loop muted playsInline aria-label={alt} tabIndex={-1}>

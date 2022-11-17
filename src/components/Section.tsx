@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -13,7 +14,10 @@ export const Section = (
 
   const NeonCircle = ({ className }: { className: string }) => (
     <div
-      className={`absolute opacity-60 dark:opacity-30 rounded-full w-96 h-96 md:w-[48rem] md:h-[48rem] ${className}`}
+      className={twMerge(
+        "absolute opacity-60 dark:opacity-30 rounded-full w-96 h-96 md:w-[48rem] md:h-[48rem]",
+        className
+      )}
     />
   );
 
@@ -33,9 +37,12 @@ export const Section = (
     >
       <div
         {...divProps}
-        className={`relative z-20 py-24 mx-auto col max-w-7xl ${
-          fullWidth ? "px-0" : "px-12"
-        } ${props.className ?? ""}`}
+        className={twMerge(
+          `relative z-20 py-24 mx-auto col max-w-7xl ${
+            fullWidth ? "px-0" : "px-12"
+          }`,
+          props.className
+        )}
       />
       {gradients ? <Gradients /> : null}
     </section>

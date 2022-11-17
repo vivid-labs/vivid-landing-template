@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -13,7 +14,7 @@ export const Details = (
       {...props}
       data-aos="zoom-y-out"
       data-aos-delay="150"
-      className={`body-lg text-light ${props.className ?? ""}`}
+      className={twMerge("body-lg text-light", props.className)}
     />
   );
 };
