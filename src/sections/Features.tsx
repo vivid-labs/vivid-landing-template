@@ -8,7 +8,7 @@ import { Section } from "../components/Section";
 import { Title } from "../components/Title";
 import { getGradientColors } from "../utils/getGradientColors";
 
-// Built with Vivid ⚡️
+// Built with Vivid (https://vivid.lol) ⚡️
 
 const FeatureSection = ({
   children,

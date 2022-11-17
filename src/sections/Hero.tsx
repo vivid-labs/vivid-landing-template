@@ -6,7 +6,7 @@ import { Section } from "../components/Section";
 import { GradientText } from "../components/GradientText";
 import { WaitlistForm } from "../components/WaitlistForm";
 
-// Built with Vivid ⚡️
+// Built with Vivid (https://vivid.lol) ⚡️
 
 const Background = () => (
   <div

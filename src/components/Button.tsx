@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 
-// Built with Vivid ⚡️
+// Built with Vivid (https://vivid.lol) ⚡️
 
 export const Button = (
   props: DetailedHTMLProps<

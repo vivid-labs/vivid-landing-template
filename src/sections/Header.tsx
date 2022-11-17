@@ -8,7 +8,7 @@ import { DarkModeButton } from "../components/DarkModeButton";
 import { GradientText } from "../components/GradientText";
 import { LinkButton } from "../components/LinkButton";
 
-// Built with Vivid ⚡️
+// Built with Vivid (https://vivid.lol) ⚡️
 
 export const Header = ({
   isDarkMode,
@@ -61,9 +61,7 @@ export const Header = ({
           </li>
         ) : null}
         <li>
-          <a href="https://docs.vivid.lol">
-            <LinkButton>Docs</LinkButton>
-          </a>
+          <LinkButton href="/">Docs</LinkButton>
         </li>
         <li className={`transition ${!nextSection && "hidden"}`}>
           <Button onClick={goToEmail}>Waitlist</Button>

@@ -2,7 +2,7 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 import { MacBar } from "./MacBar";
 
-// Built with Vivid ⚡️
+// Built with Vivid (https://vivid.lol) ⚡️
 
 type DemoProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,

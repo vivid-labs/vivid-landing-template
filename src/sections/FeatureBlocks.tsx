@@ -14,7 +14,7 @@ import { GradientText } from "../components/GradientText";
 import { Section } from "../components/Section";
 import { Title } from "../components/Title";
 
-// Built with Vivid ⚡️
+// Built with Vivid (https://vivid.lol) ⚡️
 
 const BlockTitle = ({ children }: { children: ReactNode }) => {
   return <h3 className="text-xl font-bold text-strong">{children}</h3>;

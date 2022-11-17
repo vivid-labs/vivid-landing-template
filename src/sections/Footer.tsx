@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
+import { LinkButton } from "../components/LinkButton";
 
-// Built with Vivid ⚡️
+// Built with Vivid (https://vivid.lol) ⚡️
 
 export const Footer = () => {
   return (
@@ -16,13 +16,12 @@ export const Footer = () => {
           />
           <div className="text-sm text-light">&copy; Vivid Labs, Inc. 2022</div>
         </div>
-        <Link
+        <LinkButton
           href="https://join.slack.com/t/vivid-jqa6824/shared_invite/zt-1f7tbxl86-wruO1aM7FYmEdNaOOnYCMQ"
-          className="text-sm text-light"
-          aria-label="Slack"
+          aria-label="Join Slack"
         >
           Join our Slack!
-        </Link>
+        </LinkButton>
       </div>
     </footer>
   );

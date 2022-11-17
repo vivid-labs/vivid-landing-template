@@ -1,6 +1,6 @@
 import { LinkButton } from "./LinkButton";
 
-// Built with Vivid ⚡️
+// Built with Vivid (https://vivid.lol) ⚡️
 
 export const DarkModeButton = ({
   toggleDarkMode,
@@ -40,6 +40,7 @@ export const DarkModeButton = ({
 
   return (
     <LinkButton
+      button
       onClick={toggleDarkMode}
       title="Toggle dark mode"
       aria-label="Toggle dark mode"
