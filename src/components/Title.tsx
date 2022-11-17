@@ -8,10 +8,10 @@ export const Title = (
     HTMLHeadingElement
   > & { size: "lg" | "md" }
 ) => {
-  const { size, className = "", ...otherProps } = props;
+  const { size, className = "", ...htmlProps } = props;
 
   const headingProps = {
-    ...otherProps,
+    ...htmlProps,
     "data-aos": "zoom-y-out",
   };
 
