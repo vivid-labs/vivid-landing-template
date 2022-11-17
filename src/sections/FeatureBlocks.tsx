@@ -39,7 +39,7 @@ export const FeatureBlocks = () => {
       <div className="gap-4 col">
         <Title size="md">
           Make styling a{" "}
-          <GradientText gradient="purple-teal">breeze</GradientText>
+          <GradientText className="purple-teal">breeze</GradientText>
         </Title>
         <Details>
           Stop wasting your time. Vivid makes CSS easier than recursive

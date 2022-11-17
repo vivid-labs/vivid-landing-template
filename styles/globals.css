@@ -19,6 +19,24 @@
     @apply bg-clip-text;
   }
 
+  /* Gradients */
+  .pink-blue {
+    @apply from-neon-pink;
+    @apply to-neon-blue;
+  }
+  .amber-red {
+    @apply from-neon-amber;
+    @apply to-neon-red;
+  }
+  .green-sky {
+    @apply from-neon-green;
+    @apply to-neon-sky;
+  }
+  .purple-teal {
+    @apply from-neon-purple;
+    @apply to-neon-teal;
+  }
+
   /* Responsive colors */
   .bg-extra-strong {
     @apply bg-gray-50;

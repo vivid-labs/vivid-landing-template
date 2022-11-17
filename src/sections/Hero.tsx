@@ -27,9 +27,9 @@ export const Hero = () => {
       {/* Text */}
       <div className="z-10 gap-4 text-center col md:text-left">
         <Title size="lg">
-          Build <GradientText gradient="pink-blue">visually.</GradientText>
+          Build <GradientText className="pink-blue">visually.</GradientText>
           <br />
-          Code <GradientText gradient="purple-teal">faster.</GradientText>
+          Code <GradientText className="purple-teal">faster.</GradientText>
         </Title>
         <Details>
           Vivid makes front-end development effortless with our in-browser

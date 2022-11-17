@@ -71,7 +71,7 @@ export const Testimonials = () => {
       {/* Header */}
       <div className="gap-4 col">
         <Title size="md">
-          <GradientText gradient="amber-red">Loved</GradientText> by developers
+          <GradientText className="amber-red">Loved</GradientText> by developers
         </Title>
         <Details>Styling your web app has never been easier.</Details>
       </div>

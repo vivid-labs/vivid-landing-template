@@ -1,12 +1,11 @@
-import { ReactNode } from "react";
+import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
-import { Gradient } from "../types/Gradient.type";
 import { Demo } from "../components/Demo";
 import { Details } from "../components/Details";
 import { GradientText } from "../components/GradientText";
 import { Section } from "../components/Section";
 import { Title } from "../components/Title";
-import { getGradientColors } from "../utils/getGradientColors";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -32,39 +31,40 @@ const FeatureSection = ({
   </Section>
 );
 
-const FeatureDemo = ({
-  webmSrc,
-  mp4Src,
-  bumpLeft,
-  center,
-  gradient,
-  alt,
-}: {
-  webmSrc: string;
-  mp4Src: string;
-  bumpLeft?: boolean;
-  center?: boolean;
-  gradient: Gradient;
-  alt: string;
-}) => (
-  <div
-    className={`w-5/6 md:w-1/2 p-4 md:p-12 bg-gradient-to-br ${getGradientColors(
-      gradient
-    )} rounded-xl ${
-      center ? "" : bumpLeft ? "md:-translate-x-14" : "md:translate-x-14"
-    } `}
-  >
-    <Demo
-      data-aos={`${
-        center ? "zoom-y-out" : bumpLeft ? "fade-right" : "fade-left"
-      }`}
-      data-aos-delay="300"
-      webmSrc={webmSrc}
-      mp4Src={mp4Src}
-      alt={alt}
-    />
-  </div>
-);
+const FeatureDemo = (
+  props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
+    webmSrc: string;
+    mp4Src: string;
+    bumpLeft?: boolean;
+    center?: boolean;
+    className: string;
+    alt: string;
+  }
+) => {
+  const { webmSrc, mp4Src, bumpLeft, center, alt, className, ...divProps } =
+    props;
+  return (
+    <div
+      {...divProps}
+      className={twMerge(
+        `w-5/6 md:w-1/2 p-4 md:p-12 bg-gradient-to-br rounded-xl ${
+          center ? "" : bumpLeft ? "md:-translate-x-14" : "md:translate-x-14"
+        }`,
+        className
+      )}
+    >
+      <Demo
+        data-aos={`${
+          center ? "zoom-y-out" : bumpLeft ? "fade-right" : "fade-left"
+        }`}
+        data-aos-delay="300"
+        webmSrc={webmSrc}
+        mp4Src={mp4Src}
+        alt={alt}
+      />
+    </div>
+  );
+};
 
 const Text = ({
   children,
@@ -89,7 +89,7 @@ export const Features = () => {
       <FeatureSection grayer center>
         <Text center>
           <Title size="md">
-            <GradientText gradient="amber-red">
+            <GradientText className="amber-red">
               &quot;Just right&quot;
             </GradientText>{" "}
             in seconds.
@@ -100,7 +100,7 @@ export const Features = () => {
           webmSrc="/videos/palette.webm"
           mp4Src="/videos/palette.mp4"
           center
-          gradient="amber-red"
+          className="amber-red"
           alt="A video showing Vivid's command palette functionality. The user iterates through previewed styles and applies one."
         />
       </FeatureSection>
@@ -108,7 +108,7 @@ export const Features = () => {
       <FeatureSection right>
         <Text>
           <Title size="md">
-            <GradientText gradient="pink-blue">Resize</GradientText>
+            <GradientText className="pink-blue">Resize</GradientText>
             <br /> with a click.
           </Title>
           <Details>Just drag to resize and realign components.</Details>
@@ -117,7 +117,7 @@ export const Features = () => {
           webmSrc="/videos/resize.webm"
           mp4Src="/videos/resize.mp4"
           bumpLeft
-          gradient="pink-blue"
+          className="pink-blue"
           alt="A video showing Vivid's mouse resizing functionality. By dragging with a mouse, the user resizes a component."
         />
       </FeatureSection>
@@ -125,7 +125,7 @@ export const Features = () => {
       <FeatureSection grayer>
         <Text>
           <Title size="md">
-            <GradientText gradient="green-sky">Smart commands</GradientText>
+            <GradientText className="green-sky">Smart commands</GradientText>
             <br /> cut the guesswork.
           </Title>
           <Details>
@@ -135,7 +135,7 @@ export const Features = () => {
         <FeatureDemo
           webmSrc="/videos/center.webm"
           mp4Src="/videos/center.mp4"
-          gradient="green-sky"
+          className="green-sky"
           alt="A video showing Vivid's smart command functionality. By typing smart-center, the user centers all content on screen."
         />
       </FeatureSection>
