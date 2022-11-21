@@ -24,7 +24,7 @@ const FeatureSection = ({
     grayer={grayer}
     fullWidth
     className={`col items-center ${
-      center ? "md:flex-col" : right ? "md:flex-row-reverse" : "md:flex-row"
+      center ? "" : right ? "md:flex-row-reverse" : "md:flex-row"
     }`}
   >
     {children}
