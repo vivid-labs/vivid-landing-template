@@ -4,9 +4,9 @@ import { useState } from "react";
 import { useEffectOnce, useEventListener } from "usehooks-ts";
 
 import { Button } from "../components/Button";
-import { DarkModeButton } from "../components/DarkModeButton";
 import { GradientText } from "../components/GradientText";
 import { LinkButton } from "../components/LinkButton";
+import { Moon, Sun } from "../svg/DarkModeIcons";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -54,10 +54,14 @@ export const Header = ({
       <ul className="items-center gap-2 row">
         {reloaded ? ( // Only show after first reload
           <li>
-            <DarkModeButton
-              toggleDarkMode={toggleDarkMode}
-              isDarkMode={isDarkMode}
-            />
+            <LinkButton
+              button
+              onClick={toggleDarkMode}
+              title="Toggle dark mode"
+              aria-label="Toggle dark mode"
+            >
+              {isDarkMode ? <Moon /> : <Sun />}
+            </LinkButton>
           </li>
         ) : null}
         <li>
