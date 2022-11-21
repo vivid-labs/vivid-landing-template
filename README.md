@@ -6,7 +6,8 @@ Modelled after the [Vivid landing page](https://vivid.lol).
 
 ## Preview
 
-![landing-article](https://user-images.githubusercontent.com/62365335/202045620-67969a30-d832-4fb1-ae6a-5060f1c32c16.png)
+![vivid-template-pic](https://user-images.githubusercontent.com/62365335/202585708-82c27ea9-85fc-491f-b991-d4005651b0c2.png)
+
 
 ## Features
 
