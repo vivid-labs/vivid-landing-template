@@ -4,6 +4,8 @@ This is a ready to use template for any landing page you need, built with React,
 
 Modelled after the [Vivid landing page](https://vivid.lol).
 
+> NOTE: If you are looking for a simpler alternative that is flatter and uses JS instead of TS, check out our [simple template](https://github.com/vivid-labs/vivid-landing-template-simple)!
+
 ## Preview
 
 ![vivid-template-pic](https://user-images.githubusercontent.com/62365335/202585708-82c27ea9-85fc-491f-b991-d4005651b0c2.png)
