@@ -31,7 +31,7 @@ permissions:
   contents: read
 
 env:
-  SITE: https://www.gm-pro.online
+  SITE: https://better-chat.vercel.app
   INDEXNOW_KEY: 919335287357a53ecbe3c535122ce683
 
 jobs:
@@ -102,7 +102,7 @@ jobs:
           LIST="$(printf '%s\n' "$URLS" | sed 's/.*/"&"/' | paste -sd, -)"
           curl -sf -X POST https://api.indexnow.org/indexnow \
             -H 'Content-Type: application/json; charset=utf-8' \
-            -d "{\"host\":\"www.gm-pro.online\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"$SITE/$INDEXNOW_KEY.txt\",\"urlList\":[$LIST]}" \
+            -d "{\"host\":\"better-chat.vercel.app\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"$SITE/$INDEXNOW_KEY.txt\",\"urlList\":[$LIST]}" \
             && echo "IndexNow pinged." || { echo "::error::IndexNow ping failed"; exit 1; }
 
   devto:

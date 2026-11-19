@@ -60,7 +60,7 @@ const og = (req: NextRequest) => {
             color: "#a1a1aa",
           }}
         >
-          <div style={{ color: "#fafafa" }}>gm-pro.online</div>
+          <div style={{ color: "#fafafa" }}>better-chat.vercel.app</div>
           <div>{`${meta.readingMin} min read`}</div>
         </div>
       </div>

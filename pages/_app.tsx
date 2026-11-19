@@ -77,7 +77,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         openGraph={{
           title: siteTitle,
           description: siteDescription,
-          images: [{ url: "https://www.gm-pro.online/images/logo-512.png" }],
+          images: [{ url: "https://better-chat.vercel.app/images/logo-512.png" }],
         }}
       />
       <Component

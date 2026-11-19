@@ -11,7 +11,13 @@ const nextConfig = {
     defaultLocale: "en",
   },
   async rewrites() {
-    return [{ source: "/blog/:slug/og.png", destination: "/api/og?slug=:slug" }];
+    const storage = "https://firebasestorage.googleapis.com/v0/b/gmpro-404802.firebasestorage.app/o";
+    return [
+      { source: "/blog/:slug/og.png", destination: "/api/og?slug=:slug" },
+      // Short URLs for Better Chat attachments.
+      { source: "/i/:file", destination: `${storage}/chat_images%2F:file?alt=media` },
+      { source: "/f/:file", destination: `${storage}/chat_attachments%2F:file?alt=media` },
+    ];
   },
   async headers() {
     return [

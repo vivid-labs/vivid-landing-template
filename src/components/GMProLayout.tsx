@@ -73,7 +73,7 @@ const GMProLayout = ({ children }: Props) => {
           <p style={{ margin: "4px 0" }}>
             Need help?{" "}
             <a
-              href="https://www.gm-pro.online/support"
+              href="https://better-chat.vercel.app/support"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#1a73e8", textDecoration: "none" }}
@@ -83,7 +83,7 @@ const GMProLayout = ({ children }: Props) => {
           </p>
           <p style={{ margin: "4px 0" }}>
             <a
-              href="https://www.gm-pro.online/privacy"
+              href="https://better-chat.vercel.app/privacy"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -95,7 +95,7 @@ const GMProLayout = ({ children }: Props) => {
             </a>
             {" • "}
             <a
-              href="https://www.gm-pro.online/terms"
+              href="https://better-chat.vercel.app/terms"
               target="_blank"
               rel="noopener noreferrer"
               style={{

@@ -35,7 +35,7 @@ export default async function handler(
 
     const checkout = await polar.checkouts.create({
       products: [PRODUCT_IDS[plan]],
-      successUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://gm-pro.online"}/success`,
+      successUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://better-chat.vercel.app"}/success`,
       // Polar copies checkout metadata onto the resulting order and subscription.
       metadata: {
         subscriptionType: plan === "lifetime" ? "lifetime" : "subscription",

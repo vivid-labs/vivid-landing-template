@@ -1,4 +1,4 @@
-export const SITE_URL = "https://www.gm-pro.online";
+export const SITE_URL = "https://better-chat.vercel.app";
 export const STORE_URL =
   "https://chromewebstore.google.com/detail/better-chat-chat-power-up/bfmgohplnhblcajmjhmcimjlikohiomh";
 

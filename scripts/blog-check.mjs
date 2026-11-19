@@ -76,7 +76,7 @@ posts
 
 if (process.argv.includes("--links")) {
   const urls = [...new Set(posts.flatMap((p) => [...p.src.matchAll(/href="(https?:[^"]+)"/g)].map((x) => x[1])))];
-  const headers = { "User-Agent": "blog-check (+https://www.gm-pro.online)", Accept: "*/*" };
+  const headers = { "User-Agent": "blog-check (+https://better-chat.vercel.app)", Accept: "*/*" };
   // Sequential: news.ycombinator.com rejects parallel requests.
   const results = await urls.reduce(async (acc, url) => {
     const done = await acc;

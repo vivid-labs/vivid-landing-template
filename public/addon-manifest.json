@@ -2,16 +2,16 @@
   "addOns": {
     "common": {
       "name": "Better Chat",
-      "logoUrl": "https://www.gm-pro.online/images/logo-120.png",
+      "logoUrl": "https://better-chat.vercel.app/images/logo-120.png",
       "useLocaleFromApp": true
     },
     "meet": {
       "web": {
-        "sidePanelUrl": "https://www.gm-pro.online/sidepanel",
+        "sidePanelUrl": "https://better-chat.vercel.app/sidepanel",
         "supportsScreenSharing": false,
-        "addOnOrigins": ["https://gm-pro.online", "https://www.gm-pro.online"],
-        "logoUrl": "https://www.gm-pro.online/images/logo-512.png",
-        "darkModeLogoUrl": "https://www.gm-pro.online/images/logo-dark-512.png"
+        "addOnOrigins": ["https://better-chat.vercel.app"],
+        "logoUrl": "https://better-chat.vercel.app/images/logo-512.png",
+        "darkModeLogoUrl": "https://better-chat.vercel.app/images/logo-dark-512.png"
       }
     },
     "httpOptions": {

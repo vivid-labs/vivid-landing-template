@@ -26,9 +26,9 @@ IndexNow key: `919335287357a53ecbe3c535122ce683`, served at `/919335287357a53ecb
 
 ## Accounts
 
-- Google Search Console: `sc-domain:gm-pro.online` is verified (owner). No query data yet. Submit `https://www.gm-pro.online/sitemap.xml` once this ships.
+- Google Search Console: `sc-domain:gm-pro.online` expired. Add a URL-prefix property for `https://better-chat.vercel.app` and submit `https://better-chat.vercel.app/sitemap.xml`.
 - Bing Webmaster Tools: not set up. Import from Search Console, then submit the sitemap.
-- dev.to: not set up. Settings > Extensions > RSS feed URL `https://www.gm-pro.online/blog/feed.xml`, mark "canonical URL", then add the API key secret.
+- dev.to: not set up. Settings > Extensions > RSS feed URL `https://better-chat.vercel.app/blog/feed.xml`, mark "canonical URL", then add the API key secret.
 - Analytics: none on the site. Blog conversion is measured through the store's UTM report.
 
 ## Research pack (2026-10-25)

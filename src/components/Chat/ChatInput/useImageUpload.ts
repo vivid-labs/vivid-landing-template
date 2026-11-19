@@ -64,12 +64,11 @@ export const useImageUpload = (
         async () => {
           try {
             const downloadURL = await getDownloadURL(task.snapshot.ref);
-            // Create short URL: replace full Firebase path with custom domain and strip token
+            // Create short URL: replace full Firebase path with the /i/ rewrite and strip token
             const shortUrl = downloadURL
               .replace(
                 "https://firebasestorage.googleapis.com/v0/b/gmpro-404802.firebasestorage.app/o/chat_images%2F",
-                (process.env.NEXT_PUBLIC_STORAGE_SHORT_DOMAIN ||
-                  "https://img.gm-pro.online") + "/"
+                "https://better-chat.vercel.app/i/"
               )
               .replace(/&token=[^&]+/, ""); // Remove token param
             setImage({

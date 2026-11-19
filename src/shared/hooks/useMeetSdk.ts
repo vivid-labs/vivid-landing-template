@@ -89,7 +89,7 @@ const useMeetSdk = () => {
         return;
       }
       const res = await sidePanelClient.startActivity({
-        sidePanelUrl: "https://www.gm-pro.online/sidepanel",
+        sidePanelUrl: "https://better-chat.vercel.app/sidepanel",
         additionalData: JSON.stringify({
           type: "new_chat_message",
         }),

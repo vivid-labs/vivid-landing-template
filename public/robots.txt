@@ -3,4 +3,4 @@ Allow: /
 Disallow: /sidepanel
 Disallow: /success
 
-Sitemap: https://www.gm-pro.online/sitemap.xml
+Sitemap: https://better-chat.vercel.app/sitemap.xml
